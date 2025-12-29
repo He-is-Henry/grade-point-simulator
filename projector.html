@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/projector.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Projector</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">One semester simulation</a></li>
+        <li class="current">
+          <a href="projector.html">Future semster projection</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="overlayContainer">
+      <div class="overlay">
+        <p>
+          How many semesters have do you want to simulate for?
+          <span>Protip: Include past and future semesters</span>
+        </p>
+        <input
+          type="number"
+          name="semesters"
+          id="semesters"
+          class="semesters"
+          placeholder="Enter a number of semesters"
+          min="0"
+        />
+
+        <button class="continueBtn">Continue</button>
+      </div>
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4">
+            Simulated semesters &nbsp; &nbsp;<button class="editPastSemesters">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>Total units</th>
+          <th>GP</th>
+          <th>CGPA</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="buttonContainer">
+      <button class="addBtn">Add semester</button>
+    </div>
+  </body>
+</html>

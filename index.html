@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>GP SIMULATOR</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="current">
+          <a href="index.html">One semester simulation</a>
+        </li>
+        <li>
+          <a href="projector.html">Future semster projection</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h3>Semester grades simulation</h3>
+    </section>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Units</th>
+          <th>Grades</th>
+          <th>Credit point</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-row-1 row">
+          <td><input type="text" name="" id="" value="Course 1" /></td>
+          <td>
+            <input
+              class="unit"
+              type="number"
+              name=""
+              id=""
+              value="2"
+              data-id="1"
+              max="5"
+              min="0"
+            />
+          </td>
+          <td>
+            <input
+              class="grade"
+              type="number"
+              name=""
+              id=""
+              value="5"
+              data-id="1"
+              max="5"
+              min="0"
+            />
+          </td>
+          <td class="credit-point-1 credit-point">10</td>
+          <td class="delete" data-id="1">
+            <button><img src="images/image.png" alt="" /></button>
+          </td>
+        </tr>
+        <tr class="table-row-2 row">
+          <td><input type="text" name="" id="" value="Course 2" /></td>
+          <td>
+            <input
+              class="unit"
+              type="number"
+              name=""
+              id=""
+              value="2"
+              data-id="2"
+              max="5"
+              min="0"
+            />
+          </td>
+          <td>
+            <input
+              class="grade"
+              type="number"
+              name=""
+              id=""
+              value="5"
+              data-id="2"
+              max="5"
+              min="0"
+            />
+          </td>
+          <td class="credit-point-2 credit-point">10</td>
+          <td class="delete" data-id="2">
+            <button><img src="images/image.png" alt="" /></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      TNU: <span class="tnu"></span> &nbsp; &nbsp; TCP:
+      <span class="tcp"> </span> &nbsp; &nbsp; GP: <span class="gp"></span>
+    </p>
+    <div class="buttonContainer">
+      <button class="addBtn">Add new course</button>
+    </div>
+  </body>
+
+  <footer>
+    <p>TNU: Total number of Units</p>
+    <p>TCP: Total credit point</p>
+    <p>GP: Grade point</p>
+  </footer>
+</html>
